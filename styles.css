@@ -1,0 +1,114 @@
+/*variables:to reuse same value*/
+/*Mixin:lets you make groups of CSS declarations that you want to reuse throughout your site*/
+.info-img {
+  width: 15px;
+  height: 15px;
+  margin: 2px; }
+
+.img-text {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start; }
+
+/*Nesting:let you nest your CSS selectors in a way that follows the same visual hierarchy of your HTML*/
+.contact-info p {
+  font-size: 16px;
+  margin: 2px; }
+
+.logo {
+  width: 25%;
+  height: 100%; }
+
+.head {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: gainsboro;
+  height: 50px;
+  padding: 30px;
+  margin-bottom: 50px; }
+
+.invoice {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 20px;
+  text-align: center; }
+  .invoice p {
+    margin: 5px; }
+  .invoice h1 {
+    font-size: medium; }
+
+.table {
+  margin: auto; }
+  .table thead {
+    background-color: #FFF;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px; }
+  .table th {
+    padding: 5px;
+    text-align: center;
+    color: #000;
+    font-size: 14px; }
+  .table td {
+    text-align: center;
+    font-size: 14px;
+    padding: 5px; }
+
+.invoce-last {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 50px; }
+  .invoce-last p {
+    font-size: 16px; }
+  .invoce-last h1 {
+    font-size: 16px; }
+
+.no-border-table th {
+  color: #414a8b;
+  text-align: left;
+  font-size: 16px;
+  padding: 10px; }
+.no-border-table td {
+  text-align: center;
+  padding: 10px; }
+
+button {
+  background-color: #414A8B;
+  border: none;
+  color: white;
+  padding: 20px 70px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 30px;
+  border-radius: 10px; }
+
+.btn {
+  display: flex;
+  justify-content: center; }
+
+.f-container {
+  width: 100%;
+  position: absolute;
+  bottom: 0px;
+  right: 0; }
+
+.paragraph {
+  position: absolute;
+  top: -10px;
+  right: 0;
+  color: #FFF;
+  font-size: 10px;
+  margin: 20px; }
+
+.img-last {
+  width: 100%; }
+
+/*# sourceMappingURL=styles.css.map */

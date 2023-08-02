@@ -1,0 +1,135 @@
+/*variables:to reuse same value*/
+$font:14px;
+$font-16 :16px;
+$text-diriction:center;
+/*Mixin:lets you make groups of CSS declarations that you want to reuse throughout your site*/
+@mixin flex-disply($content-diply: flex-start) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: $content-diply;
+  }
+.info-img{
+    width: 15px;
+    height: 15px;
+    margin: 2px;  
+}
+.img-text{
+    @include flex-disply; 
+}
+/*Nesting:let you nest your CSS selectors in a way that follows the same visual hierarchy of your HTML*/
+.contact-info 
+{   
+    p{
+    font-size: 16px;
+    margin: 2px;
+    }
+}
+
+.logo{
+    width: 25%;
+    height: 100%;
+}
+.head
+{
+@include flex-disply($content-diply: space-between); 
+background-color: gainsboro;
+height: 50px;
+padding: 30px;
+margin-bottom:50px ;
+}
+
+.invoice{
+    @include flex-disply($content-diply: center);
+    margin-bottom: 20px; 
+    text-align: $text-diriction; 
+    p{
+    margin: 5px;
+    }
+    h1{
+    font-size: medium;
+    }
+}
+
+.table {
+    margin: auto; 
+    thead {background-color: #FFF;
+           font-weight: bold; 
+           font-size: $font;
+           padding: 10px;
+          }
+    th{
+           padding: 5px;
+           text-align:$text-diriction;
+           color: #000; 
+           font-size: $font;
+       }
+    td {
+           text-align:$text-diriction; 
+           font-size: $font;
+           padding: 5px;
+       }
+}
+
+.invoce-last{
+    @include flex-disply($content-diply:space-between);
+    margin-top: 50px;   
+    p{
+    font-size: $font-16;
+    }
+    h1{
+    font-size: $font-16;
+    }
+}
+
+.no-border-table 
+{   th {
+    color: rgba(65, 74, 139, 1);
+    text-align: left;
+    font-size: $font-16;
+    padding: 10px;
+    }
+
+  td{
+    text-align: $text-diriction;
+    padding: 10px;
+    }
+}
+
+
+button{
+
+    background-color: #414A8B; 
+    border: none;
+    color: white;
+    padding: 20px 70px;
+    text-align: $text-diriction;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    border-radius: 10px; 
+}
+.btn{
+    display: flex;
+    justify-content: center;
+}
+
+.f-container{
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+    right: 0;  
+  }
+.paragraph{
+    position: absolute;
+    top: -10px;
+    right: 0;
+    color:#FFF;
+    font-size: 10px;   
+    margin: 20px;
+}
+.img-last{
+    
+    width: 100%;
+}
+
